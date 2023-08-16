@@ -170,6 +170,7 @@
     overflow-y: hidden;
     margin: 2px;
     padding: auto 5px;
+    box-shadow: none;
   }
 
   .mobile-hide {
