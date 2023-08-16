@@ -1,2 +1,3 @@
 # neog-ecommerce
- An E-Commerce App (Frontend).
+
+An E-Commerce App (Frontend).
