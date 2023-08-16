@@ -1,0 +1,161 @@
+.productDescriptionPage {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+/* .imageSectionDiv {
+  border: 1px solid white;
+} */
+
+.descriptionImage {
+  /* height: 450px; */
+  height: 27.5rem;
+  object-fit: cover;
+  /* width: 500px; */
+  width: 28rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  border: 1px solid white;
+  box-shadow: 0.2rem 0.5rem 0.75rem #bbb;
+  border-radius: 1rem;
+}
+
+/* DESCRIPTION STYLING */
+
+.descriptionSection {
+  border: 1px solid none;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbb;
+}
+
+.descriptionPoints {
+  text-align: left;
+  color: grey;
+}
+
+/* PRICE STYLING */
+
+.descriptionPrice {
+  margin-top: 1rem;
+}
+
+.descriptionListedPrice {
+  /* margin-left: 2rem; */
+  text-decoration: line-through;
+  color: #dc2626;
+  /* font-weight: lighter; */
+  text-align: left;
+  margin-top: 0rem;
+}
+
+.descriptionDiscountPrice {
+  /* margin: 0rem 0rem 0rem 2rem; */
+  margin: 0px;
+  color: #15803d;
+  text-align: left;
+}
+
+.discountPercent {
+  font-size: medium;
+  /* color: red; */
+  text-decoration: none;
+}
+
+/* BUTTON STYLING */
+
+.buttonSection {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+.addToCartBtn {
+  width: 30%;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(251 191 36);
+  /* background-color: yellow; */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addToCartBtn:hover {
+  background-color: rgb(245 158 11);
+}
+
+.wishlistIcon {
+  margin: 0rem 0.5rem;
+}
+
+.addToWishlistBtn {
+  width: 30%;
+  padding: 1rem;
+  background-color: rgb(249 115 22);
+  /* background-color: orange; */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addToWishlistBtn:hover {
+  background-color: rgb(234 88 12);
+}
+
+@media (max-width: 320px) {
+  .productDescriptionPage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imageSectionDiv {
+    width: 318px;
+    height: 450px;
+    border: 1px solid black;
+    max-height: 100%;
+  }
+
+  .descriptionImage {
+    max-width: 310px;
+    max-height: 450px;
+    object-fit: cover;
+    padding: 0rem;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+    border-radius: 1rem;
+  }
+
+  .descriptionSection {
+    border: 1px solid none;
+    padding: 10px;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+
+  .addToCartBtn {
+    width: 250px;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0rem;
+  }
+
+  .addToWishlistBtn {
+    width: 250px;
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .buttonSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}

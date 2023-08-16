@@ -1,0 +1,38 @@
+.wishlistPage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  text-align: center;
+}
+
+.wishlistEmpty {
+  margin: auto;
+  text-align: center;
+  padding: 10rem;
+}
+
+@media (max-width: 320px) {
+  .wishlistPage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 1px solid green; */
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 0rem; */
+    gap: 10px;
+  }
+
+  .heading-name-container {
+    text-align: center;
+  }
+
+  .wishlistEmpty {
+    max-width: 320px;
+    padding: 10px;
+    margin: 125px auto;
+    font-size: x-small;
+  }
+}

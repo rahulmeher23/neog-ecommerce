@@ -1,0 +1,162 @@
+.cardContainer {
+  height: 150px;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* padding: 1rem; */
+  margin-bottom: 1rem;
+}
+
+.cartImg {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.cartProductPrice {
+  text-align: center;
+  margin: auto;
+  /* color: green; */
+}
+
+.deleteIcon {
+  text-align: center;
+  font-size: large;
+  margin: auto;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.deleteIcon:hover {
+  color: red;
+  /* color: #213547; */
+}
+
+.qty-input {
+  padding: 5px;
+}
+
+.rupee-symbol {
+  padding: 0.25rem;
+  font-weight: bold;
+}
+
+.quantity {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addIcon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.minusIcon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cart-mobile-card {
+  border: 1px solid black;
+}
+
+.mobile-display {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .cart-hide {
+    display: none;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .cart-mobile-card {
+    border: 1px solid gray;
+    /* height: 112px; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    padding: 5px 2px;
+    margin: 10px 5px;
+    background-color: beige;
+  }
+
+  .product-info {
+    gap: 5px;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    margin: 0px 0px 0px 10px;
+  }
+
+  .cartImg {
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-name {
+    margin: 0px;
+    text-align: left;
+  }
+
+  .qty-total-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .quantity-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .minusIcon {
+    padding: 2px;
+    font-size: smaller;
+    padding: 2px;
+
+    margin: 5px;
+  }
+
+  .qty-input {
+    height: 80%;
+    padding: 2px 0px;
+    border: none;
+    border-radius: 0px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: small;
+  }
+
+  .addIcon {
+    font-size: smaller;
+    padding: 2px;
+    max-height: 25px;
+    margin: 5px;
+  }
+
+  .deleteIcon {
+    text-align: right;
+    font-size: medium;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #dc2626;
+  }
+  .subtotal {
+    text-align: left;
+    margin: 0;
+    /* justify-content: left; */
+  }
+
+  .mobile-display {
+    display: contents;
+  }
+}
