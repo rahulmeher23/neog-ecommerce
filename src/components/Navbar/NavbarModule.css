@@ -60,6 +60,10 @@ nav {
   text-decoration: none;
 }
 
+.search-text-container {
+  text-decoration: none;
+}
+
 #right {
   flex: 1;
 }

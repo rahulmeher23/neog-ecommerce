@@ -74,7 +74,7 @@ export default function Navbar() {
               placeholder="Search Here..."
               onChange={handleChange}
             />
-            <Link to="/products">
+            <Link to="/products" className="search-text-container">
               <p className="searchText">SEARCH</p>
             </Link>
           </div>
