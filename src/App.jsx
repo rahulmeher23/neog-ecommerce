@@ -13,6 +13,7 @@ import { AuthContext } from "./contexts/AuthContext";
 import { useLocation } from "react-router-dom";
 import RequiresAuth from "./components/RequiresAuth/RequiresAuth";
 import Checkout from "./pages/Checkout/Checkout";
+import MobileFilters from "./pages/Products/MobileFilters";
 
 function App() {
   // const [count, setCount] = useState(0);

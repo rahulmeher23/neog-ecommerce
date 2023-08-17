@@ -109,11 +109,17 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 320px) {
-  /* .wrapper {
-    height: 80%;
+.forgot-pwd {
+  cursor: pointer;
+}
+
+@media (max-width: 415px) {
+  .wrapper {
+    /* height: 80%; */
+    margin: 1rem;
   }
 
+  /*
   .form-container {
     flex-direction: column;
     height: 700px;

@@ -155,27 +155,6 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="price-container">
-              <div className="priceCard">
-                <h2>Price Card</h2>
-              </div>
-
-              <div className="subtotal">
-                <p>Subtotal: </p>
-                <p>{cartState.total_amount}</p>
-              </div>
-
-              <div className="shipping-fee">
-                <p>Shipping Fee: </p>
-                <p>
-                  {cartState.total_amount > 5000 ? (
-                    <span className="free">FREE </span>
-                  ) : (
-                    150
-                  )}
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
       )}

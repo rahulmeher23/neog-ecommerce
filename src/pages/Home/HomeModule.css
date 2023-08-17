@@ -41,7 +41,7 @@
   font-style: normal;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .announcement-bar {
     max-height: 50px;
     font-size: x-small;

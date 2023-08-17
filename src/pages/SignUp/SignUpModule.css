@@ -16,9 +16,9 @@
   border-bottom-right-radius: 0px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .wrapper {
-    height: 80%;
+    margin: 1rem;
   }
 
   .form-container {

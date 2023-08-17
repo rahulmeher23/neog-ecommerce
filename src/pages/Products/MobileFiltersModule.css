@@ -1,0 +1,42 @@
+/* .filters {
+} */
+
+.init-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.category-filters {
+  display: flex;
+  margin: 0rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.price-filters {
+  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.rating-filter {
+  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.drop-down-hide {
+  display: none;
+}
+
+.drop-down-display {
+  display: contents;
+}

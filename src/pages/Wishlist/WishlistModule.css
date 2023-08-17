@@ -11,7 +11,7 @@
   padding: 10rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .wishlistPage {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     /* padding-top: 0rem; */
-    gap: 10px;
+    gap: 2rem;
   }
 
   .heading-name-container {

@@ -19,9 +19,10 @@ const Products = () => {
     filterDispatch({ type: "RATINGS", payload: ratingVal });
   }
 
-  let priceMaxValue = 0;
   function handlePriceChange(e) {
     console.log(e.target.value);
+    let priceMaxValue = 0;
+
     priceMaxValue = e.target.value;
     filterDispatch({ type: "PRICE", payload: priceMaxValue });
   }

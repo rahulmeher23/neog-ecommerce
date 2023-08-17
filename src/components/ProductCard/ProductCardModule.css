@@ -153,14 +153,14 @@ h4 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .productImg {
     object-fit: cover;
-    max-width: 250px;
+    max-width: 280px;
     max-height: 250px;
   }
   .productCard {
-    width: 250px;
+    width: 280px;
     max-height: 450px;
     border: 1px solid black;
     margin: 0px;
