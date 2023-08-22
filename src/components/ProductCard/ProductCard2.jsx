@@ -5,18 +5,13 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./ProductCardModule.css";
-import ProductDescription from "../../pages/Single Product Page/ProductDescription";
-import { productsDB } from "../../backend/productsDB";
-import cartReducer from "../../reducer/cartReducer";
 import { CartContext } from "../../contexts/CartContext";
-import { WishlistContext } from "../../contexts/wishlistContext";
+import { WishlistContext } from "../../contexts/WishlistContext";
 
 const ProductCard2 = (product) => {
   const { cartState, cartDispatch } = useContext(CartContext);
   const { wishlistState, wishlistDispatch } = useContext(WishlistContext);
 
-  // console.log(" CART STATE:: ", state);
-  // console.log(" Wishlist STATE:: ", wishlistState);
   const { _id, name, price, discount, rating, category, img, description } =
     product;
 
@@ -24,12 +19,8 @@ const ProductCard2 = (product) => {
     const listp = parseFloat(price.replaceAll(",", ""));
     const discountp = parseFloat(discount.replaceAll(",", ""));
 
-    // console.log(((listp - discountp) / listp) * 100);
-
     return ((listp - discountp) / listp) * 100;
   }
-
-  // return productsDB.map((product) => {
 
   return (
     <div className="ProductCardWrapper" key={_id}>
@@ -80,12 +71,6 @@ const ProductCard2 = (product) => {
                 {price}
               </h4>
             </div>
-
-            {/* <div className="discount-percent">
-              <h4>
-                <span>({getDiscountPercent().toFixed(2)}% OFF)</span>
-              </h4>
-            </div> */}
           </div>
         </Link>
 

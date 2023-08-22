@@ -1,11 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-// import { faStar } from "@fortawesome/free-regular-svg-icons";
-import { productsDB } from "../../backend/productsDB";
 import { Link } from "react-router-dom";
 
 import "./ProductCardModule.css";

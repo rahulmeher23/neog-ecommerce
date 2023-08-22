@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
-import { WishlistContext } from "../../contexts/wishlistContext";
+import { WishlistContext } from "../../contexts/WishlistContext";
 import ProductCard2 from "../../components/ProductCard/ProductCard2";
 import "./WishlistModule.css";
 

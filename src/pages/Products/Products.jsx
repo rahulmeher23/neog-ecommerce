@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { FilterContext } from "../../contexts/FilterContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faSliders } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 import "./ProductsModule.css";

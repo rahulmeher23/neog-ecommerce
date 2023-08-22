@@ -8,7 +8,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { productsDB } from "../../backend/productsDB";
 import "./ProductDescriptionModule.css";
 import { CartContext, CartProvider } from "../../contexts/CartContext";
-import { WishlistContext } from "../../contexts/wishlistContext";
+import { WishlistContext } from "../../contexts/WishlistContext";
 
 const ProductDescription = () => {
   const { productID } = useParams();
