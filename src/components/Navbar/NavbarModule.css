@@ -125,17 +125,6 @@ nav {
 
   nav {
     width: 100%;
-    display: block;
-  }
-}
-
-@media (max-width: 415px) {
-  .nav-hide {
-    display: none;
-  }
-
-  nav {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 0.2fr;
     justify-content: center;
@@ -195,10 +184,25 @@ nav {
   }
 
   .search-input {
-    width: 80%;
+    width: 100%;
   }
+
   .searchText {
     line-height: 2;
     padding: 0px 5px;
+  }
+
+  .cart-total-mobile {
+    position: absolute;
+    font-size: smaller;
+    width: 1rem;
+    height: 1.2rem;
+    background-color: #213547;
+    color: #fff;
+    border-radius: 50%;
+    /* padding: 2px; */
+    margin: 2px 5px;
+    /* margin: auto; */
+    text-align: center;
   }
 }

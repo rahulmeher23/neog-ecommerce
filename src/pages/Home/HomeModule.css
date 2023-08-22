@@ -41,7 +41,13 @@
   font-style: normal;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 768px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
   .announcement-bar {
     max-height: 50px;
     font-size: x-small;

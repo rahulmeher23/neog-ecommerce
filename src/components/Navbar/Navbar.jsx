@@ -145,7 +145,13 @@ export default function Navbar() {
 
       <div className="menu-container menu-hide">
         <div className="mobile-nav-page ">
-          <NavLink className="mobile-menu" to="/products">
+          <NavLink
+            className="mobile-menu"
+            to="/products"
+            onClick={() => {
+              filterDispatch({ type: "CATEGORY", payload: "All" });
+            }}
+          >
             Products
           </NavLink>
           <NavLink className="mobile-menu" to="/wishlist">
@@ -153,6 +159,11 @@ export default function Navbar() {
           </NavLink>
           <NavLink className="mobile-menu iconCart" to="/cart">
             Cart
+            {cartState.cart.length == 0 ? (
+              ""
+            ) : (
+              <span class="cart-total-mobile">{cartState.cart.length}</span>
+            )}
           </NavLink>
           <NavLink className="mobile-menu" to="/login">
             Login

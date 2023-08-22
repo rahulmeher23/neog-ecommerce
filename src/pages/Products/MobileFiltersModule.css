@@ -40,3 +40,14 @@
 .drop-down-display {
   display: contents;
 }
+
+.category-content-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.category-filter-list {
+  margin: auto;
+  margin-left: 0px;
+}

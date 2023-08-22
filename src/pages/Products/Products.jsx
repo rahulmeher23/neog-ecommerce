@@ -1,17 +1,37 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FilterContext } from "../../contexts/FilterContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faSliders } from "@fortawesome/free-solid-svg-icons";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 import "./ProductsModule.css";
 import Navbar from "../../components/Navbar/Navbar";
 import { categoryDB } from "../../backend/categoryDB";
 import ProductCard2 from "../../components/ProductCard/ProductCard2";
+import { CartContext } from "../../contexts/CartContext";
+import MobileFilters from "../../pages/Products/MobileFilters";
 
 const Products = () => {
   const { filterState, filterDispatch } = useContext(FilterContext);
-  const filtered = filterState;
+  const [filterDisplay, setFilterDisplay] = useState(false);
+
+  useEffect(() => {
+    const mobileFilter = document.querySelector(".mobile-filter-content");
+
+    if (filterDisplay) {
+      mobileFilter.className = mobileFilter.className.replace(
+        "mobile-hide",
+        "mobile-filter-display"
+      );
+    } else {
+      mobileFilter.className = mobileFilter.className.replace(
+        "mobile-filter-display",
+        "mobile-hide"
+      );
+    }
+  }, [filterDisplay]);
 
   function handleFormChange(e) {
     const ratingVal = e.target.value;
@@ -41,7 +61,7 @@ const Products = () => {
 
         <div className="productsPage">
           <div className="filters-wrapper">
-            <section className="filters hide-category">
+            <section className="filters mobile-hide">
               <div className="category-filter">
                 <p className="categoryTitle">Categories</p>
                 <ul className="categoryFilterList">
@@ -149,6 +169,27 @@ const Products = () => {
                     </li>
                   </div>
                 </form>
+              </div>
+            </section>
+
+            <section className="mobile-filters hide-category">
+              <div className="filter-title-container">
+                <div
+                  className="mobile-filter-icon"
+                  onClick={() => setFilterDisplay(!filterDisplay)}
+                >
+                  <div className="filter-title">
+                    <p className="filter-title">Filter</p>
+                  </div>
+
+                  <div className="filter-icon">
+                    <FontAwesomeIcon icon={faFilter} />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mobile-filter-content mobile-hide">
+                <MobileFilters />
               </div>
             </section>
           </div>

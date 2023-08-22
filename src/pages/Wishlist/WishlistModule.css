@@ -11,7 +11,13 @@
   padding: 10rem;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 768px) {
+  .wishlistPage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
   .wishlistPage {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -42,7 +42,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
-        {/* <Route path="/checkout" element={<Checkout />} /> */}
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
 
       {/* <Home /> */}
