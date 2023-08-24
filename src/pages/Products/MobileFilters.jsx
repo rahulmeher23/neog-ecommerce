@@ -86,7 +86,7 @@ const MobileFilters = () => {
 
   return (
     <>
-      <div className="filters">
+      <div className="mobile-filters-container">
         <div className="category-filters">
           <div
             className="init-display"
