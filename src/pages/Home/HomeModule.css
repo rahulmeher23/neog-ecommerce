@@ -51,6 +51,7 @@
 @media (max-width: 425px) {
   .announcement-bar {
     max-height: 25px;
+    font-size: small;
   }
 
   .categories {

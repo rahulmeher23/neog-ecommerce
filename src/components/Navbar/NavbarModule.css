@@ -51,6 +51,10 @@ nav {
   border: 2px solid #213547;
 }
 
+link {
+  text-decoration: none;
+}
+
 .searchText {
   padding: 0.25rem 1rem;
   background-color: #213547;
@@ -169,16 +173,12 @@ nav {
     background-color: beige;
     z-index: 99;
     transition: all 1s ease-out;
-    /* height: 100vh; */
   }
 
   .mobile-menu {
-    /* color: #213547; */
     background-color: #213547;
     color: #fff;
-    /* border: 1px solid #213547; */
     border-bottom: 1px solid #fff;
-
     text-decoration: none;
     font-size: large;
     margin: 0;
