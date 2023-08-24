@@ -126,7 +126,7 @@ nav {
   nav {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 0.2fr;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
     justify-content: center;
     align-items: center;
   }
@@ -173,9 +173,14 @@ nav {
   }
 
   .mobile-menu {
-    color: #213547;
-    border: 1px solid #213547;
+    /* color: #213547; */
+    background-color: #213547;
+    color: #fff;
+    /* border: 1px solid #213547; */
+    border-bottom: 1px solid #fff;
+
     text-decoration: none;
+    font-size: large;
     margin: 0;
   }
 
@@ -192,17 +197,32 @@ nav {
     padding: 0px 5px;
   }
 
-  .cart-total-mobile {
-    position: absolute;
-    font-size: smaller;
-    width: 1rem;
-    height: 1.2rem;
-    background-color: #213547;
-    color: #fff;
-    border-radius: 50%;
-    /* padding: 2px; */
-    margin: 2px 5px;
-    /* margin: auto; */
-    text-align: center;
+  .cart-total {
+    height: 1.1rem;
+    left: 110%;
+    top: -40%;
   }
+
+  .cart-icon {
+    font-size: larger;
+    margin: auto;
+  }
+
+  .mobile-cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .mobile-nav-page {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  /* .menu-container {
+    position: relative;
+  } */
 }

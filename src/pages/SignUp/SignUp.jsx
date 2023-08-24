@@ -12,55 +12,60 @@ const SignUp = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="wrapper">
-        <div className="form-container">
-          {/* Right Overlay */}
+      <div className="login-body">
+        <Navbar />
+        <div className="wrapper">
+          <div className="form-container">
+            {/* Right Overlay */}
 
-          <div className="overlay-container overlay-container-right">
-            <div className="overlay-signup-heading ">
-              <div className="signup-overlay">
-                <h2 className="overlay-heading">Welcome!</h2>
-                <p className="overlay-description-sign-in">
-                  Please login with your credentials to keep connected with us.
-                </p>
+            <div className="overlay-container overlay-container-right">
+              <div className="overlay-signup-heading ">
+                <div className="signup-overlay">
+                  <h2 className="overlay-heading">Welcome!</h2>
+                  <p className="overlay-description-sign-in">
+                    Please login with your credentials to keep connected with
+                    us.
+                  </p>
+                </div>
+                <Link to="/login">
+                  <button className="signup-btn">Sign In</button>
+                </Link>
               </div>
-              <Link to="/login">
-                <button className="signup-btn">Sign In</button>
-              </Link>
             </div>
+
+            {/* Signup */}
+            <div className="signin-container">
+              <form className="signin-form" action="">
+                <h2>Create Account</h2>
+
+                <input
+                  className="name-input form-input"
+                  type="name"
+                  for="name"
+                  placeholder="Name"
+                />
+
+                <input
+                  className="email-input form-input"
+                  type="email"
+                  for="email"
+                  placeholder="E-mail"
+                />
+
+                <input
+                  className="pswd-input form-input"
+                  type="password"
+                  for="password"
+                  placeholder="Password"
+                />
+
+                <button className="signin-btn overlay-signup-btn">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+            {/* SignIn End */}
           </div>
-
-          {/* Signup */}
-          <div className="signin-container">
-            <form className="signin-form" action="">
-              <h2>Create Account</h2>
-
-              <input
-                className="name-input form-input"
-                type="name"
-                for="name"
-                placeholder="Name"
-              />
-
-              <input
-                className="email-input form-input"
-                type="email"
-                for="email"
-                placeholder="E-mail"
-              />
-
-              <input
-                className="pswd-input form-input"
-                type="password"
-                for="password"
-                placeholder="Password"
-              />
-
-              <button className="signin-btn overlay-signup-btn">Sign Up</button>
-            </form>
-          </div>
-          {/* SignIn End */}
         </div>
       </div>
     </>

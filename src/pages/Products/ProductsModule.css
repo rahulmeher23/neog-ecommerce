@@ -133,6 +133,9 @@
 .no-items-found {
   margin: auto;
   font-size: x-large;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 .hide-category {
@@ -210,7 +213,7 @@
 
   .filter-title,
   .filter-icon {
-    margin: 0px 10px;
+    margin: 0px 3px;
   }
 
   .filter-title-container {

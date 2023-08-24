@@ -126,6 +126,19 @@ export default function Navbar() {
           </ul>
         </div>
 
+        <div className="icons main-hide mobile-cart-icon">
+          <NavLink className="navLink iconCart" to="/cart">
+            {cartState.cart.length === 0 ? (
+              <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+            ) : (
+              <div>
+                <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+                <span class="cart-total">{cartState.cart.length}</span>
+              </div>
+            )}
+          </NavLink>
+        </div>
+
         <div className="icons hamburger-menu main-hide">
           {menuToggle ? (
             <FontAwesomeIcon
@@ -154,19 +167,13 @@ export default function Navbar() {
           >
             Products
           </NavLink>
+
           <NavLink className="mobile-menu" to="/wishlist">
             Wishlist
           </NavLink>
-          <NavLink className="mobile-menu iconCart" to="/cart">
-            Cart
-            {cartState.cart.length == 0 ? (
-              ""
-            ) : (
-              <span class="cart-total-mobile">{cartState.cart.length}</span>
-            )}
-          </NavLink>
+
           <NavLink className="mobile-menu" to="/login">
-            Login
+            {isLoggedIn ? <>Account</> : "Login"}
           </NavLink>
           <div className="searchContainer">
             <input

@@ -149,9 +149,7 @@ const Cart = () => {
                 </div>
 
                 <div className="checkout">
-                  <Link to="/checkout">
-                    <button className="checkout-btn">CHECKOUT</button>
-                  </Link>
+                  <button className="checkout-btn">CHECKOUT</button>
                 </div>
               </div>
             </div>
