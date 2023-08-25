@@ -1,0 +1,35 @@
+.billing-card {
+  /* border: 1px solid black; */
+  max-width: 300px;
+  /* margin: auto; */
+  padding: 10px;
+  text-align: left;
+  background-color: #213547;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.billing-title,
+.order-details-title {
+  color: #213547;
+}
+
+.selected {
+  position: absolute;
+  right: 0;
+  margin: 0px 5px;
+  padding: 0px 5px;
+  border: 1px solid green;
+  background: green;
+  letter-spacing: 1px;
+}
+
+.check-icon {
+  margin: 0px 5px;
+}
+
+.hide {
+  display: none;
+}

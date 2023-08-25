@@ -12,6 +12,8 @@ const Cart = () => {
   const { cartState, cartDispatch } = useContext(CartContext);
   const { filterState, filterDispatch } = useContext(FilterContext);
 
+  console.log(cartState, "cart");
+
   let product = {};
   productsDB.map((item) => {
     if (item.name === "Vivo V27 Pro (Magic Blue)") {
@@ -149,7 +151,9 @@ const Cart = () => {
                 </div>
 
                 <div className="checkout">
-                  <button className="checkout-btn">CHECKOUT</button>
+                  <Link to="/checkout">
+                    <button className="checkout-btn">CHECKOUT</button>
+                  </Link>
                 </div>
               </div>
             </div>

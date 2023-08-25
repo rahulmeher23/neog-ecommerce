@@ -1,0 +1,17 @@
+.order-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  margin-bottom: 10px;
+}
+
+.order-details-title {
+  text-align: left;
+}
+
+.product-name {
+  text-align: left;
+}
+
+.product-amount {
+  text-align: right;
+}

@@ -1,0 +1,95 @@
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 1rem 2rem;
+}
+
+.billing-title {
+  text-align: left;
+}
+
+.billing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-address {
+  margin-top: 2rem;
+  text-align: left;
+  border: 1px solid #213547;
+  max-width: 80px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #213547;
+  color: #fff;
+}
+
+.plus-icon {
+  margin: 0px 10px;
+}
+
+.order-container {
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.card-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  margin: 0px 0px 1rem 0px;
+  font-weight: bold;
+}
+
+.order-card {
+  max-width: 300px;
+  /* height: 400px;  */
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  /* padding-bottom: 0px; */
+}
+
+.order-details-container {
+  padding-bottom: 1rem;
+}
+
+.order-now-btn {
+  width: 100%;
+  text-decoration: none;
+  background-color: #213547;
+  color: #fff;
+  border-style: none;
+  padding: 10px;
+  font-family: Urbanist;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.free-shipping {
+  font-weight: bold;
+}
+
+.rupee {
+  margin: 0px 10px;
+}
+
+.order-total-amount {
+  color: black;
+}
+
+@media (max-width: 425px) {
+  .checkout-container {
+    display: block;
+  }
+
+  .order-container {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .billing-container {
+    order: -1;
+  }
+}
