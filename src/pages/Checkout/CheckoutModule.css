@@ -79,10 +79,6 @@
   color: black;
 }
 
-.main-hide {
-  display: none;
-}
-
 @media (max-width: 425px) {
   .checkout-container {
     display: block;
